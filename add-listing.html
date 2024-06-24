@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Listing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add a New Listing</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="add-listing.html">Add Listing</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="add-listing">
+            <h2>Listing Details</h2>
+            <form id="listingForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" required>
+
+                <label for="size">Size:</label>
+                <input type="number" id="size" name="size" required>
+
+                <label for="pets">Pets Allowed:</label>
+                <select id="pets" name="pets">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="coupleRooms">Couple Rooms:</label>
+                <input type="number" id="coupleRooms" name="coupleRooms" required>
+
+                <label for="image">Image URL:</label>
+                <input type="url" id="image" name="image" required>
+
+                <button type="submit">Add Listing</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
